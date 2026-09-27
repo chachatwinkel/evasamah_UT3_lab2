@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#1C4C8B"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/opciones"
+        android:layout_width="286dp"
+        android:layout_height="48dp"
+        android:entries="@array/razas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <RadioGroup
+        android:id="@+id/cajaBoton"
+        android:layout_width="368dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704">
+
+        <RadioButton
+            android:id="@+id/boton1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Comunidad del Anillo" />
+
+        <RadioButton
+            android:id="@+id/boton2"
+            android:layout_width="367dp"
+            android:layout_height="49dp"
+            android:text="Huestes de Mordor" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/caja1"
+        android:layout_width="139dp"
+        android:layout_height="51dp"
+        android:text="Sigilo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <CheckBox
+        android:id="@+id/caja2"
+        android:layout_width="136dp"
+        android:layout_height="51dp"
+        android:text="Combate con Espada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859" />
+
+    <ImageButton
+        android:id="@+id/imagen"
+        android:layout_width="313dp"
+        android:layout_height="252dp"
+        android:backgroundTint="#FCF5FD"
+        android:contentDescription="Guerrero"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177"
+        app:srcCompat="@drawable/_1000079670_removebg_preview" />
+
+    <EditText
+        android:id="@+id/texNombre"
+        android:layout_width="256dp"
+        android:layout_height="52dp"
+        android:width="48dp"
+        android:height="48dp"
+        android:ems="10"
+        android:hint="Nombre del Guerrero"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

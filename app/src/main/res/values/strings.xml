@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">evasamah_UT3_lab2</string>
+    <string-array name="razas">
+    <item>Hobbit</item>
+    <item>Elfo</item>
+    <item>Enano</item>
+    <item>Humano</item>
+</string-array>
+</resources>
